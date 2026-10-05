@@ -314,3 +314,8 @@ fig.update_layout(height=700)
 
 st.plotly_chart(fig, use_container_width=True)
 
+git add app.py
+git commit -m "Updated dashboard"
+git push
+
+
