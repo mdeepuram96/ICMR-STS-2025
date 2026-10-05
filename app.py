@@ -281,7 +281,7 @@ fig.add_hline(
 # Improve label placement
 fig.update_traces(
     textposition="top center",
-    marker=dict(size=16)
+    marker=dict(size=10)
 )
 
 fig.update_layout(
