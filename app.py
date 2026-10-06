@@ -20,9 +20,25 @@ st.markdown("### Measurement Uncertainty - Total Error (MUTE) Decision Support S
 # LOAD DATA
 # -------------------------------------------------
 
+# ============================================================
+# IQC LEVEL SELECTION
+# ============================================================
+
+iqc_level = st.sidebar.selectbox(
+    "Select IQC Level",
+    ["Level 1", "Level 2"]
+)
+
+if iqc_level == "Level 1":
+    file_name = "ICMR 2025 MU and TAE.xlsx"
+    sheet_name = "FINAL DATA L1"
+else:
+    file_name = "(level 2)ICMR 2025 MU and TAE.xlsx"
+    sheet_name = "FINAL DATA L2"
+
 data = pd.read_excel(
-    "ICMR 2025 MU and TAE.xlsx",
-    sheet_name="FINAL DATA L1",
+    file_name,
+    sheet_name=sheet_name,
     header=1
 )
 
