@@ -34,7 +34,7 @@ if iqc_level == "Level 1":
     sheet_name = "FINAL DATA L1"
 else:
     file_name = "(level 2)ICMR 2025 MU and TAE.xlsx"
-    sheet_name = "FINAL DATA L2"
+    sheet_name = "FINAL DATA L1"
 
 data = pd.read_excel(
     file_name,
